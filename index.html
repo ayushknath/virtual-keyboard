@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Virtual Keyboard - Ayush Kumar Nath</title>
+  </head>
+  <body>
+    <div id="root" class="relative h-screen bg-slate-900">
+      <section class="text-center text-4xl py-4">
+        <h1 class="text-white">Virtual Keyboard</h1>
+      </section>
+
+      <section class="w-1/3 mx-auto mt-16">
+        <p
+          class="h-20 w-full rounded-md bg-white overflow-y-auto"
+          data-output
+        ></p>
+      </section>
+
+      <main class="grid grid-rows-[repeat(5,1fr)] w-2/4 h-1/4 mx-auto mt-10">
+        <div class="grid grid-cols-[repeat(10,1fr)] grid-flow-col">
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg rounded-tl-md"
+            data-innerText
+            data-shiftable
+          >
+            `
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            1
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            2
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            3
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            4
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            5
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            6
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            7
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            8
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            9
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            0
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            -
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            =
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg rounded-tr-md"
+            data-backspace
+          >
+            Backspace
+          </button>
+        </div>
+        <div class="grid grid-cols-[repeat(10,1fr)] grid-flow-col">
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-tab
+          >
+            Tab
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            q
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            w
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            e
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            r
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            t
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            y
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            u
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            i
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            o
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            p
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            [
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            ]
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            \
+          </button>
+        </div>
+        <div class="grid grid-cols-[repeat(10,1fr)] grid-flow-col">
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-capsLock
+          >
+            Caps lock
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            a
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            s
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            d
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            f
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            g
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            h
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            j
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            k
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            l
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            ;
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            '
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-enter
+          >
+            Enter
+          </button>
+        </div>
+        <div class="grid grid-cols-[repeat(10,1fr)] grid-flow-col">
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-shift
+          >
+            Shift
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            z
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            x
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            c
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            v
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            b
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            n
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-alphabet
+          >
+            m
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            ,
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            .
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-innerText
+            data-shiftable
+          >
+            /
+          </button>
+          <button
+            class="bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.96] p-4 text-lg"
+            data-shift
+          >
+            Shift
+          </button>
+        </div>
+        <div class="grid grid-cols-[repeat(10,1fr)] grid-flow-col">
+          <button
+            class="col-span-10 bg-gray-50 ring-1 ring-gray-500 hover:bg-gray-300 active:scale-[0.987] p-4 text-lg rounded-b-md"
+            data-space
+          >
+            Space
+          </button>
+        </div>
+      </main>
+
+      <footer class="absolute bottom-0 w-full p-2 text-center bg-slate-800">
+        <p class="text-white">Made by Ayush Kumar Nath ✨</p>
+      </footer>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
