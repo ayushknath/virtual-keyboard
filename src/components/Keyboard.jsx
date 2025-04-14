@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 import Key from "./Key.jsx";
 
 function Keyboard({ keys, keyClick, capsLock, shift }) {
@@ -5,7 +6,7 @@ function Keyboard({ keys, keyClick, capsLock, shift }) {
     <main className="w-full flex items-center justify-center">
       <div className="chassis">
         {keys.map((row) => (
-          <ul className="key-row">
+          <ul key={uuidv4()} className="key-row">
             {row.map((key) => {
               const isDoubleSpan = key === "↵" || key === "⇧";
               const isSpace = key === "Space";
@@ -15,7 +16,7 @@ function Keyboard({ keys, keyClick, capsLock, shift }) {
               }`;
 
               return (
-                <li className={liClasses}>
+                <li key={uuidv4()} className={liClasses}>
                   <Key
                     value={key}
                     keyClick={keyClick}
