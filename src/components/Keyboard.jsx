@@ -6,14 +6,25 @@ function Keyboard({ keys, keyClick, capsLock, shift }) {
       <div className="chassis">
         {keys.map((row) => (
           <ul className="key-row">
-            {row.map((key) => (
-              <Key
-                value={key}
-                keyClick={keyClick}
-                capsLock={capsLock}
-                shift={shift}
-              />
-            ))}
+            {row.map((key) => {
+              const isDoubleSpan = key === "↵" || key === "⇧";
+              const isSpace = key === "Space";
+
+              const liClasses = `${
+                isDoubleSpan ? "col-span-2" : isSpace ? "col-span-full" : ""
+              }`;
+
+              return (
+                <li className={liClasses}>
+                  <Key
+                    value={key}
+                    keyClick={keyClick}
+                    capsLock={capsLock}
+                    shift={shift}
+                  />
+                </li>
+              );
+            })}
           </ul>
         ))}
       </div>
