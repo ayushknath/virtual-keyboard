@@ -1,4 +1,9 @@
-function Output({ text }) {
+import { useContext } from "react";
+import { keyboardContext } from "../App.jsx";
+
+function Output() {
+  const { text } = useContext(keyboardContext);
+
   return (
     <section className="w-full flex items-center justify-center">
       <textarea

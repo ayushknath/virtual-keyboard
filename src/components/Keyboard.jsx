@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { keyboardContext } from "../App.jsx";
 import Key from "./Key.jsx";
 
-function Keyboard({ keys, keyClick, capsLock, shift }) {
+function Keyboard() {
+  const { keys } = useContext(keyboardContext);
+
   return (
     <main className="w-full flex items-center justify-center">
       <div className="chassis">
@@ -17,12 +21,7 @@ function Keyboard({ keys, keyClick, capsLock, shift }) {
 
               return (
                 <li key={uuidv4()} className={liClasses}>
-                  <Key
-                    value={key}
-                    keyClick={keyClick}
-                    capsLock={capsLock}
-                    shift={shift}
-                  />
+                  <Key value={key} />
                 </li>
               );
             })}

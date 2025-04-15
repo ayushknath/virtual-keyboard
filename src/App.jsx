@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext, createContext } from "react";
 import Output from "./components/Output.jsx";
 import Keyboard from "./components/Keyboard.jsx";
 import Warning from "./components/Warning.jsx";
@@ -27,6 +27,8 @@ const shiftKeysArr = [
   ["⇧", "Z", "X", "C", "V", "B", "N", "M", "<", ">", "?", "⇧"],
   ["Space"],
 ];
+
+export const keyboardContext = createContext();
 
 function App() {
   const [text, setText] = useState("");
@@ -119,16 +121,15 @@ function App() {
             <h1>Virtual Keyboard</h1>
           </section>
 
-          {/* Textarea */}
-          <Output text={text} />
+          <keyboardContext.Provider
+            value={{ text, keys, handleKeyClick, capsLock, shift }}
+          >
+            {/* Textarea */}
+            <Output />
 
-          {/* Keyboard component */}
-          <Keyboard
-            keys={keys}
-            keyClick={handleKeyClick}
-            capsLock={capsLock}
-            shift={shift}
-          />
+            {/* Keyboard component */}
+            <Keyboard />
+          </keyboardContext.Provider>
         </>
       )}
     </>

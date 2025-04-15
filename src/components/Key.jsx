@@ -1,4 +1,13 @@
-function Key({ value, keyClick, capsLock, shift }) {
+import { useContext } from "react";
+import { keyboardContext } from "../App.jsx";
+
+function Key({ value }) {
+  const {
+    handleKeyClick: keyClick,
+    capsLock,
+    shift,
+  } = useContext(keyboardContext);
+
   const isCapsLockOn = capsLock && value === "Caps Lock";
   const isShiftActive = shift && value === "⇧";
 
